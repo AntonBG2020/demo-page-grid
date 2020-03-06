@@ -1,0 +1,395 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	background: url(../Images/fonposle1.jpg) fixed no-repeat; 
+	background-size: cover;
+	margin: 0 auto;
+	font-family: Cormorant, Tahoma, sans-serif;
+	font-size: 16px;
+	display: grid;
+	grid-template-areas:
+	'header header header header header header'
+	'menu main main main main right-bar'
+	'footer footer footer footer footer footer';
+	grid-gap: 5px;
+	padding: 10px;	
+}
+
+a {
+	text-decoration: none;
+}
+
+/* nachalo na grid layouta*/
+
+.header {
+	grid-area: header;
+	background-color: transparent;
+	border: 3px solid #0b0;
+}
+
+.menu {
+	grid-area: menu;
+	font-size: 1.5em;
+	font-weight: solid;
+	text-shadow: 2px 0px #0A0;
+	margin-top: 1em;
+	color: white;
+}
+
+.main {
+	grid-area: main;
+	margin-top: 0.8em;
+	padding: 10px;
+	background-color:  #07f; 
+}
+
+.right-bar {
+	grid-area: right-bar;
+	margin-top: 1.6em;
+	color: white;
+	text-shadow: 2px 0px #0a0;
+}
+
+.right-bar a {
+color: white;
+}
+
+.footer {
+	grid-area: footer;
+	padding: 10px;
+	position: relative;
+	background-color:#0a0;
+	text-align:left;
+	color:#fff;
+	z-index: -1;
+}
+
+/*krai na grid layouta*/
+
+.header-text {
+	font-size: 2.3rem;
+	text-align: center;
+	text-shadow:2px 2px white;
+	color:#0A0;
+}
+
+.menuitem {
+	padding: 0.3em;
+	text-align: center;
+	border: 3px solid #0a0;
+	margin-top: 0.3em;
+}
+
+.menuitem1 {
+	text-align: center;
+	background-color: #07f;
+	padding: 0.3em;
+	margin-top: 0.3em;
+	border: 3px solid #0a0; 
+}
+
+.menuitem:hover {
+	background-color: #07f;
+}
+
+#subtitle {
+	color: black;
+	text-align: center;
+}
+
+#img {
+	display: block;
+	width:60%;
+	height: auto;
+	margin: 10px auto;
+}
+
+#img2 {
+	width: 5%;
+	height: 9%;
+	top: 89%;
+	left: 94%;
+	position: fixed;
+}
+
+#imgGeo {
+	 margin: auto 2em;
+	 width: 90%;
+}
+
+#map {
+	margin: 5px auto;
+	cursor: zoom-in;
+}
+
+h5, h4, h3, h2, h1 {
+	color:white;
+	text-align: center;
+}
+
+
+#koza {
+	float: right;
+	padding-bottom: 5px;
+	width: 40%;
+	margin-left: 1em;
+}
+
+#edelweis {
+	 width: 40%;
+	float: left;
+	margin-right: 10px;
+}
+
+#myImage, #myImage2, #myImage3 {
+	width: 55%;
+}
+
+.butonl {
+	padding: 0.5em;
+	float: left;
+	margin: 15% 0 0 2%;
+} 
+
+.butonr {
+	padding: 0.5em;
+	float: right;
+	margin: 15% 2% 0 0;	
+}
+
+.butonl:hover {
+	opacity: 0.8;
+} 
+
+.butonr:hover {
+	opacity: 0.8;
+}
+
+
+.right-item:hover {
+	background-color: #07f;
+}
+
+
+.right-item {
+	border: 3px solid #0a0;
+	font-size: 1.1em;
+	padding: 10px;
+}
+
+.right-item1 {
+	border: 3px solid #0a0;
+	font-size: 1.1em;
+	padding: 10px;
+}
+
+.right-item:first-child {
+	margin-bottom: 7px;
+}
+
+#footer-right {
+	position: absolute;
+	bottom: 0.5em;
+	right: 5.5em;
+}
+#footer-left {
+	text-align: left;
+	padding-left: 10px;
+}
+
+#mail {
+	border: 1px solid blue;
+	background-color: lightblue;
+}
+
+@media only screen and (max-width:2400px) {
+
+#img2 {
+	width: 3%;
+	height: 5%;
+	top: 93.5%;
+	left: 96%;
+	position: fixed;
+}
+}
+
+@media only screen and (max-width:1400px) {
+
+#img2 {
+	width: 5%;
+	height: 9%;
+	top: 89%;
+	left: 94%;
+	position: fixed;
+}
+}
+
+@media only screen and (max-width:1200px) {
+
+#img2 {
+	width: 7%;
+	height: 9%;
+	top: 90.5%;
+	left: 91.5%;
+	position: fixed;
+}
+}
+
+@media only screen and (max-width:1000px) {
+
+#img2 {
+	width: 7%;
+	height: 13%;
+	top: 82.5%;
+	left: 91.5%;
+	position: fixed;
+}
+}
+
+@media only screen and (max-width:800px) {
+	
+	body {
+	background: url(../Images/fonposle1.jpg) fixed no-repeat; 
+	background-size: cover;
+	margin: 0 auto;
+	font-family: Cormorant, Tahoma, sans-serif;
+	font-size: 16px;
+	display: grid;
+	grid-template-areas:
+	'header header header header header header'
+	'menu menu menu menu menu menu'
+	'main main main main main main'
+	'right-bar right-bar right-bar right-bar right-bar right-bar'
+	'footer footer footer footer footer footer';
+	grid-gap: 5px;
+	padding: 10px;
+font-size: 1em;	
+}
+
+#img2 {
+	width: 8%;
+	height: 16%;
+	top: 80%;
+	left: 90%;
+	position: fixed;
+}
+}
+
+
+@media only screen and (max-width:600px) {
+	body {
+	background: url(../Images/backgr.jpg) fixed no-repeat; 
+	background-size: contain;
+	margin: 0 auto;
+	font-family: Cormorant, Tahoma, sans-serif;
+	font-size: 16px;
+	display: grid;
+	grid-template-areas:
+	'header header header header header header'
+	'menu menu menu menu menu menu'
+	'main main main main main main'
+	'right-bar right-bar right-bar right-bar right-bar right-bar'
+	'footer footer footer footer footer footer';
+	grid-gap: 5px;
+	padding: 5px;
+font-size: 0.6em;	
+}
+
+#img2 {
+	width: 9%;
+	height: 16%;
+	top: 80%;
+	left: 90%;
+	position: fixed;
+}
+
+#footer-right {
+	position: absolute;
+	bottom: 1em;
+	right: 5.5em;
+}
+#footer-left {
+	text-align: left;
+	padding-left: 5px;
+}
+}
+
+@media only screen and (max-width:500px) {
+	body {
+	background: url(../Images/backgr.jpg) fixed no-repeat; 
+	background-size: contain;
+	margin: 0 auto;
+	font-family: Cormorant, Tahoma, sans-serif;
+	font-size: 16px;
+	display: grid;
+	grid-template-areas:
+	'header header header header header header'
+	'menu menu menu menu menu menu'
+	'main main main main main main'
+	'right-bar right-bar right-bar right-bar right-bar right-bar'
+	'footer footer footer footer footer footer';
+	grid-gap: 5px;
+	padding: 5px;
+font-size: 0.6em;	
+}
+
+#img2 {
+	width: 14%;
+	height: 11%;
+	top: 87%;
+	left: 84%;
+	position: fixed;
+}
+
+#footer-right {
+	position: absolute;
+	bottom: 2em;
+	right: 6em;
+}
+#footer-left {
+	text-align: left;
+	padding-left: 5px;
+	padding-top: 1em;
+}
+
+.footer {
+	grid-area: footer;
+	padding: 10px;
+	position: relative;
+	background-color:#0a0;
+	text-align:left;
+	color:#fff;
+	z-index: -1;
+	height: 70px;
+}
+}
+
+@media only screen and (max-width:400px) {
+	body {
+	background: url(../Images/backgr.jpg) fixed no-repeat; 
+	background-size: contain;
+	margin: 0 auto;
+	font-family: Cormorant, Tahoma, sans-serif;
+	font-size: 16px;
+	display: grid;
+	grid-template-areas:
+	'header header header header header header'
+	'menu menu menu menu menu menu'
+	'main main main main main main'
+	'right-bar right-bar right-bar right-bar right-bar right-bar'
+	'footer footer footer footer footer footer';
+	grid-gap: 5px;
+	padding: 5px;
+font-size: 0.6em;	
+}
+
+#img2 {
+	width: 12.5%;
+	height: 9%;
+	top: 88%;
+	left: 85%;
+	position: fixed;
+}
+}
